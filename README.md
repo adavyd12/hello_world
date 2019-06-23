@@ -30,7 +30,7 @@ $ ./venv/bin/python3 server.py
 ### Build a Docker image
 
 ```shell
-$ docker build -t datawire/hello-world .
+$ docker build -t adavydov/apache3 .
 Sending build context to Docker daemon  20.99kB
 Step 1/7 : FROM python:3-alpine
  ---> a93594ce93e7
@@ -63,7 +63,7 @@ Successfully tagged datawire/hello-world:latest
 Build the image first, then launch it using `docker run`.
 
 ```shell
-$ docker run --rm -it -p 8000:8000 datawire/hello-world
+$ docker run --rm -it -p 8000:8000 --name apache3 adavydov/apache3
  * Serving Flask app "server" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
