@@ -1,1 +1,2 @@
 # Push Docker COntainer to Kubernetes
+# Check status of Nginx-Ingress
